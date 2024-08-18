@@ -30,11 +30,11 @@ spec:
               name: app-secret
               key: db-pass
       nodeSelector:
-        zone: us-east-2a
+        zone: us-east-1a
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
-          volumeID: vol-04cedcd2a9359d829
+          volumeID: vol-088d780f0a1e9f2bf
           fsType: ext4
       initContainers:
         - name: busybox
